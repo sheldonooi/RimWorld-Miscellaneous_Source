@@ -137,10 +137,6 @@ namespace NanoPrinter
                     for (int j = 0; j < thingList.Count; j++)
                     {
                         Thing item = thingList[j];
-                        if (item.def.IsApparel || item.def.IsMeleeWeapon || item.def.IsRangedWeapon)
-                        {
-                            thing = item;
-                        }
                         if (item.def == ThingDef.Named(ScannerDefName))
                         {
                             thing1 = item;
